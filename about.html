@@ -1,200 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p {
-        font-family: "Lato", sans-serif;
-      }
-    </style>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Kompas Nekretnine</title>
-  </head>
 
-  <body>
+<head>
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kompas Nekretnine</title>
+</head>
 
-  <div class="w3-top">
-    <div class="w3-bar w3-theme-d5 w3-left-align">
-      <a href="index.html" class="w3-bar-item w3-button w3-hover-white"><img src="img/logo/logo-cropped.png"
-          style="width: 30px; height: 24px;"> Kompas nekretnine</a>
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
-        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Početna</a>
-      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">O nama</a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontakt</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button" title="Notifications">Naše usluge <i class="fa-solid fa-caret-down"
-            style="color: white;"></i></button>
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="sale.html" class="w3-bar-item w3-button">Prodaja</a>
-          <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
-          <a href="#" class="w3-bar-item w3-button">Procena</a>
-        </div>
-      </div>
-      <a href="https://www.facebook.com/profile.php?id=100092153797479&mibextid=LQQJ4d"
-        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com/kompasnekretnine/?igshid=MWQ1ZGUxMzBkMA%3D%3D&fbclid=IwAR0obJaASS-M-8O0cd1wzxkPjjQYr7ungpmlw1uwlQBwMjzuBrfyQm2V5yk"
-        class="w3-hide-small w3-bar-item w3-button w3-right"><i class="fa-brands fa-instagram"></i></i></a>
-      <a href="https://www.tiktok.com/@kompasnekretnine?_t=8ccSYOM27wE&_r=1"
-        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.youtube.com/channel/UCwDTE3SqCIoegOom1kNf2mw"
-        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-youtube"></i></a>
+<body>
+
+  <div id="includedNavbar"></div>
+
+  <div class="w3-display-container w3-animate-opacity">
+    <img src="img/austin-distel-win.jpg" style="width:100%;min-height:350px;max-height:800px;" class="w3-hide-small">
+    <div class="w3-display-middle w3-margin-top w3-center w3-hide-small">
+      <h1 class="w3-xxlarge w3-text-white">
+        <span class="w3-padding w3-black w3-opacity-min">
+          <b>Vaš pouzdani partner u svetu nekretnina</b>
+        </span>
+      </h1>
     </div>
+    <img src="img/about-sm.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;"
+      class="w3-hide-large w3-hide-medium">
+  </div>
 
-    <div id="navDemo" class="w3-bar-block w3-theme-d5 w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Početna</a>
-      <a href="about.html" class="w3-bar-item w3-button">O nama</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Kontakt</a>
-      <div class="w3-dropdown-hover">
-        <button class="w3-button" title="Notifications">Naše usluge<i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="#" class="w3-bar-item w3-button">Prodaja</a>
-          <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
-          <a href="#" class="w3-bar-item w3-button">Procena</a>
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">O nama</h3>
+    <p>Nastojimo da budemo vodeći pružalac usluga u oblasti nekretnina i
+      željeno mesta zaposlenja za profesionalce. Trudimo se da razumemo naša tržišta
+      i potrebe naših klijenata i pružimo sveobuhvatne savete o nekretninama.
+    </p>
+    <p>Posvećeni smo stvaranju energičnog i pozitivnog radnog okruženja.
+      Želimo da razvijemo partnerstva zasnovana na transparentnosti i poverenju.
+      Naš uspeh merimo rezultatima koje pružamo klijentima.
+    </p>
+  </div>
+
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col">
+        <div class="w3-padding-16">
+          <h2 class="w3-border-bottom w3-border-grey w3-padding-16">Putovanje ka vašem domu</h2>
         </div>
+        <h4>Evo nekoliko koraka koje možete preduzeti kako biste započeli putovanje ka vašem idealnom domu uz pomoć
+          Kompas nekretnina:</h4>
+        <p><b>1. Definisanje prioriteta: </b></p>
+        <p>Razmislite o svojim potrebama i željama. Koliko soba vam je potrebno? Koje kvadrature? Da li preferirate stan
+          ili kuću?
+          Koji su vam prioriteti u vezi sa lokacijom i okruženjem?
+        </p>
+        <p><b>2. Budžetiranje: </b></p>
+        <p>Odredite koliko novca ste spremni da uložite u nekretninu.
+          To će vam pomoći da se fokusirate na objekte koji su u skladu sa vašim finansijskim mogućnostima.
+        </p>
+        <p><b>3. Kontaktirajte agenciju: </b></p>
+        <p>Obratite se Kompas nekretninama kako biste dobili stručnu pomoć u procesu pronalaženja doma.
+          Možete nas kontaktirati putem telefona, e-pošte ili posetiti našu kancelariju kako biste razgovarali o svojim
+          potrebama i ciljevima.
+        </p>
+        <p><b>4. Pretraga ponude: </b></p>
+        <p>Kompas nekretnine će vam pružiti širok izbor nekretnina koje odgovaraju vašim kriterijumima.
+          Možete pretraživati našu online bazu podataka, pregledati oglase ili dobiti personalizovane predloge od
+          agenata.
+        </p>
+        <p><b>5. Razgledanje nekretnina: </b></p>
+        <p>Kada pronađete nekretnine koje vam se sviđaju, agencija će organizovati razgledanje za vas.
+          Odlazak na licu mesta vam omogućava da vidite nekretninu uživo i procenite da li ispunjava vaše potrebe i
+          očekivanja.
+        </p>
+        <p><b>6. Pregovaranje i zaključivanje posla: </b></p>
+        <p> Ako pronađete nekretninu koja vam se sviđa, Kompas nekretnine će vam pomoći u pregovaranju o ceni i
+          uslovima.
+          Nakon postizanja dogovora, agencija će vam pomoći u zaključivanju ugovora i sprovođenju svih potrebnih pravnih
+          koraka.
+        </p>
+        <p><b>7. Praćenje procesa: </b></p>
+        <p>Tokom celog procesa, Kompas nekretnine će vam pružiti podršku i obezbediti sve potrebne informacije.
+          Agencija će vam pomoći da se nosite sa administrativnim procedurama, kao i da pravilno procenite sve aspekte
+          kupovine nekretnine.
+        </p>
       </div>
     </div>
   </div>
 
-<div class="w3-display-container w3-animate-opacity">
-    <img src="img/austin-distel-win.jpg" style="width:100%;min-height:350px;max-height:800px;" class="w3-hide-small">
-    <div class="w3-display-middle w3-margin-top w3-center w3-hide-small">
-        <h1 class="w3-xxlarge w3-text-white">
-            <span class="w3-padding w3-black w3-opacity-min">
-                <b>Vaš pouzdani partner u svetu nekretnina</b>
-            </span>
-        </h1>
-    </div>
-    <img src="img/about-sm.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;" class="w3-hide-large w3-hide-medium">
-</div>
+  <div class="w3-display-container w3-container">
+    <img src="img/outside-cropped.png" alt="lokal" style="width:100%;" class="w3-margin-bottom">
+  </div>
 
-<div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">O nama</h3>
-    <p>Nastojimo da budemo vodeći pružalac usluga u oblasti nekretnina i 
-        željeno mesta zaposlenja za profesionalce. Trudimo se da razumemo naša tržišta 
-        i potrebe naših klijenata i pružimo sveobuhvatne savete o nekretninama.
-    </p>
-    <p>Posvećeni smo stvaranju energičnog i pozitivnog radnog okruženja. 
-        Želimo da razvijemo partnerstva zasnovana na transparentnosti i poverenju. 
-        Naš uspeh merimo rezultatima koje pružamo klijentima.
-    </p>
-</div>
+  <div class="w3-row w3-grayscale">
 
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-    <div class="w3-row">
-      <div class="w3-col">
-      <div class="w3-padding-16"><h2 class="w3-border-bottom w3-border-grey w3-padding-16">Putovanje ka vašem domu</h2></div>
-        <h4>Evo nekoliko koraka koje možete preduzeti kako biste započeli putovanje ka vašem idealnom domu uz pomoć Kompas nekretnina:</h4>
-        <p><b>1. Definisanje prioriteta: </b></p>
-        <p>Razmislite o svojim potrebama i željama. Koliko soba vam je potrebno? Koje kvadrature? Da li preferirate stan ili kuću?
-           Koji su vam prioriteti u vezi sa lokacijom i okruženjem?
-        </p>
-        <p><b>2. Budžetiranje: </b></p>
-        <p>Odredite koliko novca ste spremni da uložite u nekretninu. 
-            To će vam pomoći da se fokusirate na objekte koji su u skladu sa vašim finansijskim mogućnostima.
-        </p>
-        <p><b>3. Kontaktirajte agenciju: </b></p>
-        <p>Obratite se Kompas nekretninama kako biste dobili stručnu pomoć u procesu pronalaženja doma. 
-            Možete nas kontaktirati putem telefona, e-pošte ili posetiti našu kancelariju kako biste razgovarali o svojim potrebama i ciljevima.
-        </p>
-        <p><b>4. Pretraga ponude: </b></p>
-        <p>Kompas nekretnine će vam pružiti širok izbor nekretnina koje odgovaraju vašim kriterijumima. 
-            Možete pretraživati našu online bazu podataka, pregledati oglase ili dobiti personalizovane predloge od agenata.
-        </p>
-        <p><b>5. Razgledanje nekretnina: </b></p>
-        <p>Kada pronađete nekretnine koje vam se sviđaju, agencija će organizovati razgledanje za vas. 
-            Odlazak na licu mesta vam omogućava da vidite nekretninu uživo i procenite da li ispunjava vaše potrebe i očekivanja.
-        </p>
-        <p><b>6. Pregovaranje i zaključivanje posla: </b></p>
-        <p> Ako pronađete nekretninu koja vam se sviđa, Kompas nekretnine će vam pomoći u pregovaranju o ceni i uslovima. 
-            Nakon postizanja dogovora, agencija će vam pomoći u zaključivanju ugovora i sprovođenju svih potrebnih pravnih koraka.
-        </p>
-        <p><b>7. Praćenje procesa: </b></p>
-        <p>Tokom celog procesa, Kompas nekretnine će vam pružiti podršku i obezbediti sve potrebne informacije. 
-            Agencija će vam pomoći da se nosite sa administrativnim procedurama, kao i da pravilno procenite sve aspekte kupovine nekretnine.
-        </p>
-      </div>
-</div>
-</div>
+  </div>
 
-<div class="w3-display-container w3-container">
-  <img src="img/outside-cropped.png" alt="lokal" style="width:100%;" class="w3-margin-bottom">
-</div>
-
-<div class="w3-row w3-grayscale">
-  
-</div>
-
-<div class="w3-container w3-padding-32" id="about">
+  <div class="w3-container w3-padding-32" id="about">
     <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-grey w3-bottombar">Kontaktirajte nas</span></div>
-    <h3>Adresa</h3>
-    <p>Posetite nas ili nas kontaktirajte</p>
-    <p><i class="fa fa-map-marker w3-xlarge"></i> Kumodraška 144, Beograd</p>
-    <p><i class="fa fa-phone w3-xlarge"></i> +38169695015</p>
-    <p><i class="fa fa-envelope-o w3-text w3-xlarge"></i> nekretninekompas@gmail.com</p>
-    <p><i class="fa fa-user w3-text w3-xlarge"></i> PR. Nikola Milovanović </p>
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-grey w3-bottombar">Kontaktirajte nas</span></div>
+      <p>Radnim danima:</p>
+      <p><i class="fa-regular fa-clock"> 09.00 - 18.00</i></p>
+      <p><i class="fa-solid fa-location-dot fa-beat w3-xlarge"></i> Kumodraška 144, Beograd</p>
+      <p><i class="fa-solid fa-phone fa-spin fa-spin-reverse w3-xlarge"></i> +38169695015</p>
+      <p><i class="fa-solid fa-at fa-spin w3-xlarge"></i> nekretninekompas@gmail.com</p>
+      <p><i class="fa-solid fa-user-tie fa-fade w3-xlarge"></i> PR. Nikola Milovanović </p>
     </div>
     <div class="w3-col m7">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.3161479468217!2d20.478918776185907!3d44.774359679200856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f62c0c0e2d%3A0x280825492e5cf1a6!2z0JrRg9C80L7QtNGA0LDRiNC60LAgMTQ0LCDQkdC10L7Qs9GA0LDQtCAxMTAxMA!5e0!3m2!1ssr!2srs!4v1687086916317!5m2!1ssr!2srs" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.3161479468217!2d20.478918776185907!3d44.774359679200856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f62c0c0e2d%3A0x280825492e5cf1a6!2z0JrRg9C80L7QtNGA0LDRiNC60LAgMTQ0LCDQkdC10L7Qs9GA0LDQtCAxMTAxMA!5e0!3m2!1ssr!2srs!4v1687086916317!5m2!1ssr!2srs"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</div>
+  </div>
 
-<!-- <div class="w3-display-container w3-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.3161479468217!2d20.478918776185907!3d44.774359679200856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f62c0c0e2d%3A0x280825492e5cf1a6!2z0JrRg9C80L7QtNGA0LDRiNC60LAgMTQ0LCDQkdC10L7Qs9GA0LDQtCAxMTAxMA!5e0!3m2!1ssr!2srs!4v1687086916317!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div> -->
+  <div id="includedFooter"></div>
 
-<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
-    <h4>Follow Us</h4>
-    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-    <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-    <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-    <p>Powered by Misa Kula</p>
-  
-    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right w3-theme-d5 w3-hide-small">
-      <a class="w3-button w3-theme-d5" href="#includedNavbar"><span class="w3-xlarge">
-      <i class="fa fa-chevron-circle-up"></i></span></a>
-    </div>
-  </footer>
+  <script>
+    $(function () {
+      $("#includedNavbar").load("common/navbar.html");
+      $("#includedFooter").load("common/footer.html");
+    });
 
-    <script>
-        // Script for side navigation
-        function w3_open() {
-          var x = document.getElementById("mySidebar");
-          x.style.width = "300px";
-          x.style.paddingTop = "10%";
-          x.style.display = "block";
-        }
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
 
-        // Close side navigation
-        function toggleNavigation() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
+    // Close side navigation
+    function toggleNavigation() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
 
-        // Used to toggle the menu on smaller screens when clicking on the menu button
-        function openNav() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else { 
-            x.className = x.className.replace(" w3-show", "");
-          }
-        }
-    </script>
-  </body>
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
 </html>
