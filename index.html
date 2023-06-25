@@ -1,159 +1,193 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <head>
-    <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Kompas Nekretnine</title>
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+
+  </script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kompas Nekretnine</title>
 </head>
 
-<div class="w3-top">
-  <div class="w3-bar w3-theme-d5 w3-left-align">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-white"><img src="img/logo/logo-cropped.png" style="width: 30px; height: 24px;"> Kompas nekretnine</a>
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Početna</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">O nama</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontakt</a>
+<body>
+
+  <div id="includedNavbar"></div>
+
+  <!-- <div class="w3-top">
+    <div class="w3-bar w3-theme-d5 w3-left-align">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-white"><img src="img/logo/logo-cropped.png"
+          style="width: 30px; height: 24px;"> Kompas nekretnine</a>
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Početna</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">O nama</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontakt</a>
       <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-button" title="Notifications">Naše usluge<i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-        <a href="sale.html" class="w3-bar-item w3-button">Prodaja</a>
-        <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
-        <a href="#" class="w3-bar-item w3-button">Procena</a>
+        <button class="w3-button" title="Notifications">Naše usluge <i class="fa-solid fa-caret-down"
+            style="color: white;"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="sale.html" class="w3-bar-item w3-button">Prodaja</a>
+          <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
+          <a href="#" class="w3-bar-item w3-button">Procena</a>
+        </div>
+      </div>
+      <a href="https://www.facebook.com/profile.php?id=100092153797479&mibextid=LQQJ4d"
+        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/kompasnekretnine/?igshid=MWQ1ZGUxMzBkMA%3D%3D&fbclid=IwAR0obJaASS-M-8O0cd1wzxkPjjQYr7ungpmlw1uwlQBwMjzuBrfyQm2V5yk"
+        class="w3-hide-small w3-bar-item w3-button w3-right"><i class="fa-brands fa-instagram"></i></i></a>
+      <a href="https://www.tiktok.com/@kompasnekretnine?_t=8ccSYOM27wE&_r=1"
+        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/channel/UCwDTE3SqCIoegOom1kNf2mw"
+        class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div id="navDemo" class="w3-bar-block w3-theme-d5 w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html" class="w3-bar-item w3-button">Početna</a>
+      <a href="about.html" class="w3-bar-item w3-button">O nama</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Kontakt</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button" title="Notifications">Naše usluge<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+          <a href="#" class="w3-bar-item w3-button">Prodaja</a>
+          <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
+          <a href="#" class="w3-bar-item w3-button">Procena</a>
+        </div>
       </div>
     </div>
-    <a href="https://www.facebook.com/profile.php?id=100092153797479&mibextid=LQQJ4d" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-facebook-official"></i></a>
-    <a href="https://www.instagram.com/kompasnekretnine/?igshid=MWQ1ZGUxMzBkMA%3D%3D&fbclid=IwAR0obJaASS-M-8O0cd1wzxkPjjQYr7ungpmlw1uwlQBwMjzuBrfyQm2V5yk" class="w3-hide-small w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@kompasnekretnine?_t=8ccSYOM27wE&_r=1" class="w3-bar-item w3-button w3-right w3-hide-small"><img src="/img/logo/youtube-logo.png"></a>
-    <a href="https://www.youtube.com/channel/UCwDTE3SqCIoegOom1kNf2mw" class="w3-bar-item w3-button w3-right w3-hide-small"><img src=""></a>
+  </div> -->
+
+  <!-- Sidebar on click -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="toggleNavigation()"
+      class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#" class="w3-bar-item w3-button">Link 5</a>
+  </nav>
+
+  <div id="includedNavbar"></div>
+
+  <!-- Image Header -->
+  <div class="w3-display-container w3-animate-opacity">
+    <img src="img/head-photo.jpg" style="width:100%;min-height:350px;max-height:800px;" class="w3-hide-small">
+    <img src="img/head-photo-sm.png" style="width:100%;min-height:350px;max-height:600px;"
+      class="w3-hide-large w3-hide-medium">
+    <div class="w3-display-middle w3-margin-top w3-center w3-hide-small">
+      <h1 class="w3-xxlarge w3-text-white">
+        <span class="w3-padding w3-black w3-opacity-min">
+          <b>Kompas Nekretnine</b><br>
+          <b>Smer ka vašem idealnom domu</b>
+        </span>
+      </h1>
     </div>
-   
-     <div id="navDemo" class="w3-bar-block w3-theme-d5 w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button">Početna</a>
-       <a href="about.html" class="w3-bar-item w3-button">O nama</a>
-       <a href="contact.html" class="w3-bar-item w3-button">Kontakt</a>
-       <div class="w3-dropdown-hover">
-           <button class="w3-button" title="Notifications">Naše usluge<i class="fa fa-caret-down"></i></button>     
-           <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-             <a href="#" class="w3-bar-item w3-button">Prodaja</a>
-             <a href="#" class="w3-bar-item w3-button">Iznajmljivanje</a>
-             <a href="#" class="w3-bar-item w3-button">Procena</a>
-           </div>
-         </div>
-   </div>
-   </div>
-
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="toggleNavigation()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
-
-<div id="includedNavbar"></div>
-
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="img/head-photo.jpg" style="width:100%;min-height:350px;max-height:800px;" class="w3-hide-small">
-  <img src="img/head-photo-sm.png" style="width:100%;min-height:350px;max-height:600px;" class="w3-hide-large w3-hide-medium">
-  <div class="w3-display-middle w3-margin-top w3-center w3-hide-small">
-    <h1 class="w3-xxlarge w3-text-white">
-      <span class="w3-padding w3-black w3-opacity-min">
-        <b>Kompas Nekretnine</b><br>
-        <b>Smer ka vašem idealnom domu</b>
-      </span>
-    </h1>
   </div>
-</div>
 
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile/head-photo-sm.jpg>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our website <a class="w3-text-teal" href="w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal w3-display-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile/head-photo-sm.jpg>
+    <div class=" w3-container">
+            <p>Cool huh? Ok, enough teasing around..</p>
+            <p>Go to our website <a class="w3-text-teal" href="w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
     </div>
     <footer class="w3-container w3-teal">
       <p>Modal footer</p>
     </footer>
   </div>
-</div>
-
-
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="w3images/snow.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
   </div>
-  </div>
-</div>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="w3images/lights.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
+  <!-- Work Row -->
+  <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="w3images/mountains.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
+    <div class="w3-quarter">
+      <h2>Our Work</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="w3images/snow.jpg" alt="Snow" style="width:100%">
+        <div class="w3-container">
+          <h3>Customer 1</h3>
+          <h4>Trade</h4>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="w3images/lights.jpg" alt="Lights" style="width:100%">
+        <div class="w3-container">
+          <h3>Customer 2</h3>
+          <h4>Trade</h4>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter">
+      <div class="w3-card w3-white">
+        <img src="w3images/mountains.jpg" alt="Mountains" style="width:100%">
+        <div class="w3-container">
+          <h3>Customer 3</h3>
+          <h4>Trade</h4>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+          <p>Blablabla</p>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <!-- Container -->
+  <div class="w3-container" style="position:relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+      style="position:absolute;top:-28px;right:24px">+</a>
   </div>
-</div>
 
-</div>
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-<!-- Pricing Row -->
-<!-- <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+  <!-- Pricing Row -->
+  <!-- <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
     <h2>PRICING</h2>
     <p>Choose a pricing plan that fits your needs.</p><br>
     <div class="w3-third w3-margin-bottom">
@@ -214,180 +248,255 @@
     </div>
 </div> -->
 
-<!-- Partners Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-    <h2>OUR PARTNERS</h2>
-    
-    <div class="w3-row"><br>
-    
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
+  <!-- Partners Container -->
+  <div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2 class="w3-margin-bottom">OUR PARTNERS</h2>
+
+    <div class="w3-row w3-hide-large w3-hide-medium">
+
+      <div class="w3-col s6">
         <a href="https://www.halooglasi.com/">
-            <img src="img/logo/posao-share-image-2.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+          <img src="img/logo/posao-share-image-2.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
         </a>
-    </div>
-    
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://www.4zida.rs/">
-            <img src="img/logo/deo-inspira-grupe.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-    
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://www.nekretnine.rs/">
-            <img src="img/logo/nekretnine-rs.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-    
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://sasomange.rs/">
-            <img src="img/logo/sasomange.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
+      </div>
 
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://estitor.com/rs-en">
-            <img src="img/logo/estitor-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-    </div>
-
-    <div class="w3-row"><br>
-
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://www.realitica.com/">
-            <img src="img/logo/realitica-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://berza-nekretnine.com/">
-            <img src="img/logo/berza-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
-        <a href="https://www.indomio.rs/">
-            <img src="img/logo/indomio-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
-        </a>
-    </div>
-
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
+      <div class="w3-col s6" style="margin-bottom: 20px;">
         <a href="https://www.srbija-nekretnine.org/">
-            <img src="img/logo/srbija-nekretnine-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+          <img src="img/logo/srbija-nekretnine-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
         </a>
-    </div>
+      </div>
 
-    <div class="w3-col" style="width: 20%; margin-bottom: 20px;">
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://www.nekretnine.rs/">
+          <img src="img/logo/nekretnine-rs.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://sasomange.rs/">
+          <img src="img/logo/sasomange.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://estitor.com/rs-en">
+          <img src="img/logo/estitor-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://www.indomio.rs/">
+          <img src="img/logo/indomio-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6">
+        <a href="https://www.4zida.rs/">
+          <img src="img/logo/deo-inspira-grupe.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://www.realitica.com/">
+          <img src="img/logo/realitica-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
         <a href="https://www.svenekretnine.com/">
-            <img src="img/logo/svenekretnine-com-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+          <img src="img/logo/svenekretnine-com-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
         </a>
-    </div>
-    
-    </div>
+      </div>
+
+      <div class="w3-col s6" style="margin-bottom: 20px;">
+        <a href="https://berza-nekretnine.com/">
+          <img src="img/logo/berza-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+
     </div>
 
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    <div class="w3-row w3-hide-small"><br>
+
+      <div class="w3-col w3-margin-bottom s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.halooglasi.com/">
+          <img src="img/logo/posao-share-image-2.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.4zida.rs/">
+          <img src="img/logo/deo-inspira-grupe.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.nekretnine.rs/">
+          <img src="img/logo/nekretnine-rs.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://sasomange.rs/">
+          <img src="img/logo/sasomange.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://estitor.com/rs-en">
+          <img src="img/logo/estitor-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
+
+    <div class="w3-row w3-hide-small"><br>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.realitica.com/">
+          <img src="img/logo/realitica-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
       </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://berza-nekretnine.com/">
+          <img src="img/logo/berza-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
       </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.indomio.rs/">
+          <img src="img/logo/indomio-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.srbija-nekretnine.org/">
+          <img src="img/logo/srbija-nekretnine-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
+      <div class="w3-col s6" style="width: 20%; margin-bottom: 20px;">
+        <a href="https://www.svenekretnine.com/">
+          <img src="img/logo/svenekretnine-com-logo.png" alt="Boss" style="width:45%" class="w3-hover-opacity">
+        </a>
+      </div>
+
     </div>
   </div>
-</div>
 
-<div class="w3-container w3-padding-32" id="about">
+  <!-- Contact Container -->
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+        <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+        <h3>Address</h3>
+        <p>Swing by for a cup of coffee, or whatever.</p>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input" type="text" name="Message" required>
+          </div>
+          <input class="w3-check" type="checkbox" checked name="Like">
+          <label>I Like it!</label>
+          <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="about">
     <div class="w3-col m5">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">O nama</h3>
-      <p>Nastojimo da budemo vodeći pružalac usluga u oblasti nekretnina i 
-        željeno mesta zaposlenja za profesionalce. Trudimo se da razumemo naša tržišta 
+      <p>Nastojimo da budemo vodeći pružalac usluga u oblasti nekretnina i
+        željeno mesta zaposlenja za profesionalce. Trudimo se da razumemo naša tržišta
         i potrebe naših klijenata i pružimo sveobuhvatne savete o nekretninama.
       </p>
-      <p>Posvećeni smo stvaranju energičnog i pozitivnog radnog okruženja. 
-        Želimo da razvijemo partnerstva zasnovana na transparentnosti i poverenju. 
+      <p>Posvećeni smo stvaranju energičnog i pozitivnog radnog okruženja.
+        Želimo da razvijemo partnerstva zasnovana na transparentnosti i poverenju.
         Naš uspeh merimo rezultatima koje pružamo klijentima.
       </p>
       <div class="w3-col m8 s12">
-        <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="navigateToAbout()"><b>Još o nama »</b></button></p>
+        <p><button class="w3-button w3-padding-large w3-white w3-border" onclick="navigateToAbout()"><b>Još o nama
+              »</b></button></p>
       </div>
     </div>
-      <div class="w3-col m7">
-        <div class="w3-display-container w3-animate-opacity">
-          <img src="img/outside-cropped.png" style="width:100%;min-height:350px;max-height:600px;" class="w3-hide-small w3-hide-medium">
-          <img src="img/outside.jpeg" style="width:100%;min-height:350px;max-height:600px;" class="w3-hide-large">
-        </div>
+    <div class="w3-col m7">
+      <div class="w3-display-container w3-animate-opacity">
+        <img src="img/outside-cropped.png" style="width:100%;min-height:350px;max-height:600px;"
+          class="w3-hide-small w3-hide-medium">
+        <img src="img/outside.jpeg" style="width:100%;min-height:350px;max-height:600px;" class="w3-hide-large">
       </div>
     </div>
-</div>
-
-<!-- Image of location/map -->
-<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
-
-<footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-<p>Powered by Misa Kula</p>
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right w3-theme-d5 w3-hide-small">
-    <a class="w3-button w3-theme-d5" href="#includedNavbar"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
-</footer>
+  </div>
 
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
+  <footer class="w3-container w3-padding-32 w3-theme-d5 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/profile.php?id=100092153797479&mibextid=LQQJ4d"
+      title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal"
+      href="https://www.instagram.com/kompasnekretnine/?igshid=MWQ1ZGUxMzBkMA%3D%3D&fbclid=IwAR0obJaASS-M-8O0cd1wzxkPjjQYr7ungpmlw1uwlQBwMjzuBrfyQm2V5yk"
+      title="instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.tiktok.com/@kompasnekretnine?_t=8ccSYOM27wE&_r=1"
+      title="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+    <a class="w3-button w3-large w3-teal" href="https://www.youtube.com/channel/UCwDTE3SqCIoegOom1kNf2mw"
+      title="youtube"><i class="fa-brands fa-youtube"></i></a>
+    <p>Powered by Misa Kula</p>
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right w3-theme-d5 w3-hide-small">
+      <a class="w3-button w3-theme-d5" href="#includedNavbar"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+  </footer>
 
-function navigateToAbout() {
-  document.location.href = 'about.html';
-}
 
-// Close side navigation
-function toggleNavigation() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+  <script>
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+    $(function () {
+      $("#includedNavbar").load("common/navbar.html");
+      $("#includeFooter").load("../common/footer.html");
+    });
 
+    // Script for side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "300px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+
+    function navigateToAbout() {
+      document.location.href = 'about.html';
+    }
+
+    // Close side navigation
+    function toggleNavigation() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 </body>
+
 </html>
